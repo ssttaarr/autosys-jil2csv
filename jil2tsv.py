@@ -21,6 +21,8 @@ temp_file.seek(0)
 default_data = {'insert_job': '','job_type': '','box_name': '','command': '','machine': '','owner': '','permission': '','date_conditions': '','days_of_week': '','start_times': '','run_window': '','condition': '','description': '','n_retrys': '','term_run_time': '','box_terminator': '','job_terminator': '','std_out_file': '','std_err_file': '','min_run_alarm': '','max_run_alarm': '','alarm_if_fail': '','max_exit_status': '','chk_files': '','profile': '','job_load': '','priority': '','auto_delete': '','group': '','application': '', 'exclude_calendar': ''}
 datasets = []
 data = default_data.copy()
+datasets.append('insert_job'+"\t"+'job_type'+"\t"+'box_name'+"\t"+'command'+"\t"+'machine'+"\t"+'owner'+"\t"+'permission'+"\t"+'date_conditions'+"\t"+'days_of_week'+"\t"+'start_times'+"\t"+'run_window'+"\t"+'condition'+"\t"+'description'+"\t"+'n_retrys'+"\t"+'term_run_time'+"\t"+'box_terminator'+"\t"+'job_terminator'+"\t"+'std_out_file'+"\t"+'std_err_file'+"\t"+'min_run_alarm'+"\t"+'max_run_alarm'+"\t"+'alarm_if_fail'+"\t"+'max_exit_status'+"\t"+'chk_files'+"\t"+'profile'+"\t"+'job_load'+"\t"+'priority'+"\t"+'auto_delete'+"\t"+'group'+"\t"+'application'+"\n")
+data = default_data.copy()
 outputString=""
 
 for line in temp_file:
