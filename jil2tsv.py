@@ -10,7 +10,7 @@ temp_file = tempfile.TemporaryFile()
 for line in in_file:
 	line = line.replace('job_type:','\njob_type:')	#Moves job type to its own line
 	line = line.replace("\r\n","\n")				#Converts to Unix line endings
-	line = re.sub('^ |\t','',line)					#rips off only leading spaces/tabs (newlines are needed)
+	line = re.sub('^[ \t]+','',line)				#rips off only leading spaces/tabs (newlines are needed)
 	temp_file.write(line)
 in_file.close()
 temp_file.write("\n") #ensures the last job is appended
